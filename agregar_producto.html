@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Form login | SDS </title>
+	<link rel="stylesheet" href="css/agregar_producto.css">
+</head>
+<body>
+
+	<div class="login-box">
+		<img class="avatar" src="img/imgLogoSDS.png" alt="Logo de SDS">
+		<h1>Nuevo producto</h1>
+		<form>
+			
+			<label for="producto">Producto</label>
+			<input type="text" class="clase1" placeholder="Ingrese el producto nuevo">
+
+			
+			<label for="marca">Marca</label>
+			<input type="text" class="clase1" placeholder="Ingrese la marca del producto">
+            
+            
+			<label for="stock_minimo">Stock mínimo</label>
+			<input type="number" class="clase1" placeholder="Ingrese stock minimo">
+
+			
+			<label for="stock_maximo">Stock maximo</label>
+            <input type="text" class="clase1" placeholder="Ingrese stock maximo">
+		
+
+        <form>
+            <input type="checkbox" id="opcion1" name="opcion-1" value="Cubierto">
+            <label for="opcion1">Cubierto</label>
+            <input type="checkbox" id="opcion2" name="opcion-2" value="Descubierto">
+            <label for="opcion2">Descubierto</label>
+            <input type="checkbox" id="opcion3" name="opcion-3" value="Temperatura">
+            <label for="opcion3">Temperatura</label>
+            <input type="number" class="clase3" placeholder="Ingrese temperatura">
+            <input type="checkbox" id="opcion4" name="opcion-4" value="Fragil">
+            <label for="opcion4">Fragil</label>
+            <div style=" text-align: left;">
+
+                    <div style=" display: inline-block">
+                        <input type="checkbox" id="opcion5" name="opcion-5" value="Con vencimiento">
+                        <label for="opcion5">Con vencimiento</label>
+                    </div>
+                    <div id="fechaVencimiento"  style=" display: inline-block; margin-left: 10%;width: 50%;">  
+                        <input type="date" class="clase20" placeholder="Ingrese Vencimiento">
+                    </div>
+            
+          
+        
+            </div>
+        </form>
+    
+        <h4>Ubicación</h4>
+            <select class="seleccion "name="sector" id="sector">
+                <option value="1">Sector1</option>
+                <option value="2">Sector2</option>
+                <option value="3">Sector3</option>
+                <option value="4">Sector4</option>
+                <option value="5">Sector5</option>
+                <option value="6">Sector6</option>
+                <option value="7">Sector7</option>
+                <option value="8">Sector8</option>
+                <option value="9">Sector9</option>
+            </select>
+
+
+            <select class="seleccion" name="rack" id="rack" >
+                <option value="1">RackA</option>
+                <option value="2">RackB</option>
+                <option value="3">RackC</option>
+                <option value="4">RackD</option>
+                <option value="5">RackF</option>
+                <option value="6">RackG</option>
+            </select>
+            <br>
+        <input type="submit" name="btn_agregar_producto" value="Registrar Producto" class="clase2">
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    
+    $("#fechaVencimiento").hide();
+  
+    var evento = document.querySelector("#opcion5");
+
+    evento.addEventListener('click',function(){ $("#fechaVencimiento").show();  });
+    
+        
+  });
+        
+    </script>
+
+</body>
+</html>

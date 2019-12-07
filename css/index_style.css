@@ -29,7 +29,7 @@ div.contenedor{
 }
 
 div#cero{
-	background-color: rgb(250,90,0);
+	background-color: red;
 }
 
 div#uno{
@@ -50,11 +50,11 @@ div#cuatro{
 }
 
 div#cinco{
-	background-color: rgb(27,54,71);
+	background-color: rgb(27,222,71);
 }
 
 div#seis{
-	background-color: rgb(21,40,54);
+	background-color: rgb(21,1,204);
 }
 
 div#siete{

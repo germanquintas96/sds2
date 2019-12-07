@@ -6,9 +6,26 @@
     text-transform: uppercase;
 }
 
+
+
 body{
  /* background: url(../img/fondo.jpg) no-repeat center top ; */
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../img/fondo.jpg);
+}
+
+
+.clase2{
+	border:none;
+	outline: none;
+  height: 50px;
+  width: 150px;
+	background: #b80f22;
+	color: #fff;
+	font-size: 18px;
+  border-radius: 50px;
+  position: absolute;
+  right: 10%;
+  bottom: 23%;
 }
 
 

@@ -1,0 +1,366 @@
+*{
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+body {
+	margin: 0;
+    padding: 0;
+    background:black!important;
+	/* background: url(../img/fondo.jpg) no-repeat center top;
+	background-size: cover; */
+	font-family: 'Nanum Gothic Coding', monospace;
+	overflow-x: hidden;
+}
+
+a{
+    text-decoration:none!important;
+}
+
+/************ GENERALES ************************************************/
+
+.box{  
+    border:1px solid #fff;  
+	width: 502px;
+	height: 552px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+    padding: 70px 30px;
+    
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+.titulo {
+    color:#cfd1f7;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family:'Nanum Gothic Coding';
+}
+
+.enlace{
+    text-decoration:none!important;
+    cursor:pointer;
+    font-size:18px;
+    color:#fff;
+}
+
+.pie{
+	background:#888;
+	color:#fff;
+	width:100%;
+	position:fixed;
+	bottom:0;
+    text-align: center;
+    height: 4%!;
+}
+
+/*titulos largos tienen la clase largo, asi entran en una linea*/
+h1.largo{
+    width: 100%;
+    color:#fff;
+    text-align: center;
+    font-size:30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family:'Nanum Gothic Coding';
+  
+}
+
+/************ INDEX ************************************************/
+#login{
+    margin-bottom: -5%;
+    margin-top: 65px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Nanum Gothic Coding';
+}
+
+.box .input{
+    background: #000;
+    border:none;
+    border-bottom: 1px solid #fff;
+    width:100%;
+    margin-top:8%;
+    height: 35px;
+    font-size:18px;
+    text-align:center;
+    color:#fff;
+}
+
+.btn-ingresar{
+    height: 50px!important;
+    width: 100%;
+    margin-top:12%;
+}
+
+.recuperar-password{
+    float: right;
+    margin-top:23%;
+}
+
+.alerta-error-login{
+    width: 100%;
+    background: red;
+    text-align: center;
+    padding:5px;
+}
+.alerta-error-login span{
+    font-size:16px;
+}
+/************ MENU PRINCIPAL ************************************************/
+.usuario{
+    font-size:20px;
+    text-align:center;
+}
+
+#lupa{
+    width: 169px!important;
+    float: right;
+    margin-right: 17px;
+    margin-top: -133px;
+    opacity: 0.8;
+    z-index: 0;
+    visibility: hidden;   
+}
+
+#gestion{
+    width: 201px;
+    margin-top: -57%;
+    margin-left: -1px;
+    height: 80%;
+    opacity: 0.8;
+    visibility: hidden;
+}
+
+.opcion-menu{
+	width:200px;
+	height:220px;
+	float:left;
+	margin-top:10%!important;
+	margin:10px;
+    border-radius: 5%;
+    z-index:2;
+    font-family:'Nanum Gothic Coding';
+}
+.opcion-menu p{
+	font-size: 17px;
+	color:#000;
+	text-align:center;
+	margin-top:40%;
+    line-height: 30px;
+
+}
+
+.opcion-menu p:hover{
+	font-size: 19px;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+
+
+ .uno{background: #ffd1d8!important;}
+ .dos{background: #d6ffe9!important;}
+
+ .salir-menu-principal{
+    float: right;
+    margin-top:18%;
+}
+
+.salir-menu-principal:hover{
+    color:#fff!important;
+}
+
+/************ BUSQUEDA DE PRODUCTOS ************************************************/
+.box-busqueda{  
+    border:1px solid #fff;
+	width: 1000px;
+	height: 580px;
+	background: #faf6f9;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+#busqueda{
+    width:70%;
+    margin-bottom: 5px;
+    height: 35px;
+}
+
+#tabla_resultado{
+    background:#fff;
+    overflow: scroll;
+    width: 900px;
+    height: 300px;
+    margin-bottom: 20px;
+    border:1px solid #999;
+}
+
+#tabla_resultado::-webkit-scrollbar{
+    width:8px;
+    background:#fff;
+}
+#tabla_resultado::-webkit-scrollbar-thumb{
+    width:5px;
+    background: #999;
+    border-radius:8px;
+  
+}
+
+.table{
+    width:100%;
+}
+
+.bg-cabecera{
+    background:#62969a!important;
+}
+.table td{
+    color:#000;
+    font-family:'Nanum Gothic Coding';
+    font-size:18px;
+}
+
+.fa-edit{
+    color:#000;
+}
+
+.fa-w-14{
+    color:red;
+    margin-left:30px!important;
+}
+
+
+
+.enlace-menu-principal{
+    margin-top:20px;
+    color:black!important;
+} 
+
+.no-esta{
+    background:lightblue;
+    color:black;
+    font-size:30px;
+}
+
+
+/************ GESTION DE ALMACENAMIENTO ************************************************/
+.menu-gestion{
+    width: 100%;
+    height: 39px;
+    border: 1px solid #999;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.gestion-enlace{
+    text-transform: capitalize;
+    font-size:20px;
+}
+
+.gestion-enlace:hover{
+    font-size:23px;
+    color:#fff;
+}
+
+/* .largoenlace{
+    text-align: left!important;
+    font-size:22px!important;
+} */
+
+.enlace-gestion{
+    margin-top:25px;
+    color:white!important;
+}
+
+/************ AGREGAR PRODUCTO ************************************************/
+form input[type="text"]{
+    padding:5px;
+    border-radius: 2px;
+    border:1px solid gray;
+  
+}
+.box2 .etiqueta{
+    width:25%;
+    margin-bottom: 10px;
+    margin-top:5px; 
+}
+.box2 .inputt{
+    float:right;
+    width:75%;
+    padding:3px;
+}
+
+/* .selector{
+    width:100%;
+} */
+
+.izquierda{
+    float:left;
+}
+.marca{
+    float:left!important;
+}
+/* .selector .select{
+    width:80%!important;
+    float: right!important;
+} */
+
+.selector select{
+    width:38%!important;
+    padding:5px!important;
+}
+form input[type="submit"]{
+    background:#eee;
+    padding:10px;
+    border:1px solid #ccc;
+    color:#333;
+    width:100%;
+    cursor: pointer;
+    margin-top:10px;
+}
+
+form input[type="submit"]:hover{
+    background:#235e3d;
+    color:white;
+    float: right;
+}
+
+.vencimiento{
+    margin-left: 20px;
+    width: 40%;
+}
+
+.checkbox{
+    margin-left:21px;
+}
+
+.registrar{
+    margin-top:20px!important;
+}
+.enlace-agregar{
+    margin-top:7%;
+}
+
